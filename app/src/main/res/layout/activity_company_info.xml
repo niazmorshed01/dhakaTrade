@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    android:orientation="vertical"
+    tools:context="com.example.dhakatrades.CompanyInfo">
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/dark_blue"
+        android:gravity="center"
+        android:text="Company Name"
+        android:textColor="@color/light_goldenrod_yellow"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="14">
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Company Trading Code"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"            />
+        <TextView
+            android:id="@+id/tradeCodeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Company Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Last Trading Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/ltp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Last Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Today's Lowest Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/lowest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Today's Highest Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/highest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Change"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/priceChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Change"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Change Percentage "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/changePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Change %"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Today's Closing Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tcp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Closing Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginRight="15dp"
+            android:gravity="left"
+            android:text="Yesterday's Closing Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ycp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Closing Price"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Day's Value(in Millions)"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Value"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Day's Volume"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Volume"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="left"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white_smoke"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="left"
+            android:text="Day's Trade"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/trade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="4dp"
+            android:gravity="right"
+            android:text="Trade"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <View android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:background="@color/white_smoke"/>
+
+    </GridLayout>
+
+</LinearLayout>
